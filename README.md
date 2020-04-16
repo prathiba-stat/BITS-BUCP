@@ -13,12 +13,13 @@ The files you will download are:
 8.	HDIofMCMC.R – This is a file that facilitates drawing the ROPE plot. DO NOT CHANGE ANYTHING IN THIS FILE
 9.	plots.R – This is a file that facilitates drawing the ROPE plot. DO NOT CHANGE ANYTHING IN THIS FILE
 10.	plot_SSD.R – This is a file that facilitates drawing the SSD plot. DO NOT CHANGE ANYTHING IN THIS FILE
+11. plot_SSD_line.R - This is a file that facilititates drawing the SSD plot with lines of best fit. DO NOT CHANGE ANYTHING IN THIS FILE
 
 In order to run a syntax, for instance BITS.R, open the file in R or Rstudio. You can initially run the syntax line by line to understand it. All comments are marked with # symbol which means it is a line to explain the syntax that appears below it. 
-Some places where you may consider changing parameters to suit your data in BITS.R are:
-Line 7: setwd
-Line 10: filename (if you have your own csv file please place that name within quotes)
-Line 84: Set priors according to what you believe would be the scale of the parameter. For instance if you think the mean of the outcome variable may range between 2 and 7, you could use a distribution of dnorm(5, .05). This is the equivalent of a variance of 20 allowing us to be more agnostic about our prior beliefs.
+Some places where you may consider changing parameters to suit your data in BITS.R, BITS-looped.R, BUCP.R, andBUCP-looped.R (using a control+f function) are:
+setwd
+filename (if you have your own csv file please place that name within quotes)
+Set priors according to what you believe would be the scale of the parameter. For instance if you think the mean of the outcome variable may range between 2 and 7, you could use a distribution of dnorm(5, .05). This is the equivalent of a variance of 20 allowing us to be more agnostic about our prior beliefs.
 
 
 
